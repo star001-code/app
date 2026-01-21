@@ -1,0 +1,162 @@
+{
+  "project_name": "Al-Ghadeer Transport & Customs Clearance System",
+  "design_philosophy": {
+    "persona": "E1: The Anti-AI Designer",
+    "theme": "The Logistic Commander",
+    "core_principles": [
+      "Fusion over Imitation: Mix Swiss precision with Arabic calligraphy aesthetics.",
+      "Content is King: Data density is beautiful. Tables are the hero.",
+      "Contrast: High contrast for readability in bright office environments.",
+      "RTL First: Every design decision respects the Right-to-Left flow naturally, not as an afterthought."
+    ]
+  },
+  "global_settings": {
+    "direction": "rtl",
+    "font_family": "Cairo, sans-serif",
+    "border_radius": "0.5rem",
+    "spacing_scale": "generous"
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "DEFAULT": "#003366",
+        "light": "#004b95",
+        "dark": "#002244",
+        "foreground": "#FFFFFF"
+      },
+      "secondary": {
+        "DEFAULT": "#c2a356",
+        "light": "#d4b86a",
+        "dark": "#a38640",
+        "foreground": "#003366"
+      },
+      "success": {
+        "DEFAULT": "#008d5f",
+        "light": "#26a17a",
+        "foreground": "#FFFFFF"
+      },
+      "background": {
+        "DEFAULT": "#F8F9FA",
+        "paper": "#FFFFFF",
+        "sidebar": "#003366"
+      },
+      "text": {
+        "primary": "#0f172a",
+        "secondary": "#64748b",
+        "muted": "#94a3b8"
+      },
+      "border": "#e2e8f0"
+    },
+    "usage_rules": [
+      "Sidebar MUST be Primary Dark (#003366).",
+      "Active navigation items MUST use Secondary Gold (#c2a356) for text or border.",
+      "Primary Actions (Add, Save) MUST be Primary Blue (#003366) or Gold (#c2a356) depending on hierarchy.",
+      "Status 'Paid' or 'Completed' MUST use Success Green (#008d5f).",
+      "NEVER use gradients for backgrounds. Solid, authoritative colors only."
+    ]
+  },
+  "typography": {
+    "font_family": "Cairo",
+    "weights": {
+      "regular": 400,
+      "medium": 500,
+      "bold": 700
+    },
+    "styles": {
+      "h1": "text-3xl md:text-4xl font-bold tracking-tight text-primary-dark",
+      "h2": "text-2xl font-bold tracking-tight text-primary-DEFAULT",
+      "h3": "text-xl font-bold text-primary-DEFAULT",
+      "body": "text-base font-normal leading-relaxed text-slate-700",
+      "small": "text-sm font-medium text-slate-500",
+      "label": "text-sm font-bold text-primary-DEFAULT mb-1.5 block"
+    }
+  },
+  "layout": {
+    "structure": "Sidebar Layout (RTL)",
+    "sidebar": {
+      "width": "w-72",
+      "background": "bg-[#003366]",
+      "text_color": "text-white",
+      "active_item_style": "bg-white/10 text-[#c2a356] border-r-4 border-[#c2a356]"
+    },
+    "header": {
+      "height": "h-16",
+      "background": "bg-white",
+      "border": "border-b border-slate-200",
+      "shadow": "shadow-sm"
+    },
+    "main_content": {
+      "padding": "p-6 md:p-8",
+      "background": "bg-[#F8F9FA]",
+      "max_width": "max-w-7xl mx-auto"
+    },
+    "grid_system": {
+      "dashboard": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6",
+      "form": "grid grid-cols-1 md:grid-cols-2 gap-6"
+    }
+  },
+  "components": {
+    "Button": {
+      "base": "font-cairo font-bold transition-all duration-200 shadow-sm active:scale-95",
+      "variants": {
+        "default": "bg-[#003366] text-white hover:bg-[#004b95]",
+        "secondary": "bg-[#c2a356] text-[#003366] hover:bg-[#d4b86a]",
+        "outline": "border-2 border-[#003366] text-[#003366] hover:bg-[#003366] hover:text-white",
+        "ghost": "hover:bg-slate-100 text-slate-700",
+        "destructive": "bg-red-600 text-white hover:bg-red-700"
+      }
+    },
+    "Card": {
+      "base": "bg-white rounded-lg border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-200",
+      "header": "p-6 border-b border-slate-100",
+      "content": "p-6"
+    },
+    "Table": {
+      "wrapper": "rounded-lg border border-slate-200 overflow-hidden bg-white shadow-sm",
+      "header": "bg-[#003366] text-white hover:bg-[#003366]",
+      "row": "hover:bg-slate-50 transition-colors border-b border-slate-100 last:border-0",
+      "cell": "p-4 text-right align-middle font-medium text-slate-700"
+    },
+    "Input": {
+      "base": "flex h-10 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-slate-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c2a356] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 text-right"
+    },
+    "Badge": {
+      "base": "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
+      "variants": {
+        "default": "border-transparent bg-[#003366] text-white hover:bg-[#003366]/80",
+        "secondary": "border-transparent bg-[#c2a356] text-[#003366] hover:bg-[#c2a356]/80",
+        "success": "border-transparent bg-[#008d5f] text-white hover:bg-[#008d5f]/80",
+        "outline": "text-slate-950 border-slate-200"
+      }
+    }
+  },
+  "assets": {
+    "images": [
+      {
+        "category": "login_background",
+        "url": "https://images.unsplash.com/photo-1761857989912-275b46ab8f2f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwxfHxzaGlwcGluZyUyMGxvZ2lzdGljcyUyMGNvbnRhaW5lciUyMHRydWNrJTIwY2FyZ298ZW58MHx8fHwxNzY4OTkzODk4fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Modern bridge over a busy industrial port with containers"
+      },
+      {
+        "category": "dashboard_widget",
+        "url": "https://images.unsplash.com/photo-1759272548470-d0686d071036?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwyfHxzaGlwcGluZyUyMGxvZ2lzdGljcyUyMGNvbnRhaW5lciUyMHRydWNrJTIwY2FyZ298ZW58MHx8fHwxNzY4OTkzODk4fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Shipping containers stacked at a busy port"
+      },
+      {
+        "category": "empty_state",
+        "url": "https://images.unsplash.com/photo-1759826350352-c5b0b77729bd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwzfHxzaGlwcGluZyUyMGxvZ2lzdGljcyUyMGNvbnRhaW5lciUyMHRydWNrJTIwY2FyZ298ZW58MHx8fHwxNzY4OTkzODk4fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Forklift moving shipping containers"
+      }
+    ],
+    "icons": "Use Lucide React icons. Prefer: Truck, Package, Users, FileText, Receipt, Trash2, LayoutDashboard, Search, Plus, Settings, LogOut."
+  },
+  "universal_guidelines": [
+    "RTL ENFORCEMENT: Ensure 'dir=rtl' is set on the root html/body tag.",
+    "NO GENERIC GRADIENTS: Use solid colors or very subtle noise textures.",
+    "HIGH DENSITY: This is a business tool. Avoid excessive whitespace in tables. Use 'p-2' or 'p-3' for table cells, not 'p-6'.",
+    "INTERACTIVE FEEDBACK: Every button and link MUST have a hover and active state.",
+    "ACCESSIBILITY: Ensure text contrast is high. Gold text on white might be hard to read; use Gold for borders/icons or dark backgrounds.",
+    "DATA-TESTID: All interactive elements must have a 'data-testid' attribute."
+  ],
+  "instructions_to_main_agent": "You are building a Customer Management System for Al-Ghadeer Transport. Follow the color palette strictly. The layout must be RTL. Use the provided image URLs for the login page or dashboard widgets. Focus on functionality: Customer List, Add/Edit Customer, Delivery Receipts (Wusulat), Payment Receipts (Qabudat), Account Statement. Use Shadcn UI components but customize them to match the 'Logistic Commander' theme."
+}
